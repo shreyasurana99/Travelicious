@@ -1,29 +1,21 @@
 <html>
-    <head>
-        <title>Shrey's blog</title>
-    </head>
-    <body>
-      <h2>Enter: Prague</h2>
 
-      <p class="item-intro text-muted"><pink>Or when I almost toured a city alone without getting lost.</pink></p>
-      <p style="text-align:justify">While living out of a suitcase long-term might be my biggest travel woe, not getting enough time to explore a destination comes in a close second. So I decided to make the most of the one day I had.</p>
-      <p style="text-align:justify">So naturally, the first thing I do is dash to the nearest food place I can find. In hindsight, this is how and where my suitcase got stolen, so I really should have planned this out better, but this Trdelnik was so worth it. Trdelník is a classic Czech dish made with rolled dough that is wrapped around a stick, then grilled and topped with sugar and walnut mix.</p>
-      <p><pink>Yum! </pink></p>
-      <p style="text-align:justify">As I continued exploring, I found myself (mouth agape) standing in front of Prague’s astronomical clock. Built in the 1400’s, it’s the oldest astronomical clock in the world still functioning.</p>
-      <p style="text-align:justify">I should mention though, I still have no idea how to properly read the 'time', but it was fascinating to gaze at the dials and hands of the clock featuring the sun, moon and signs of the zodiac.</p>
-      <p style="text-align:justify">I continued walking past the colorful façades of tall buildings until I reached the Vltava river. My next stop was the famous Charles Bridge. Again, the bridge is super old dating back to the 1400’s. (I’m sensing a theme here..)</p>
-      <p style="text-align:justify">The Charles Bridge is adorned with 30 baroque-style statues. One of these, John of Nepomuk, is notably famous for its plaque and rubbing it is supposed to bring good luck. However, there is also an adjacent plaque featuring a dog and the Queen which has no lucky significance whatsoever but people confuse as the lucky rubbing spot. (I guess the woman pictured on the left did a whole lot of rubbing for no luck.) Remember: rub the right one. Literally.</p>
-      <p style="text-align:justify">After getting lost several times and trying to talk to various Czechs, I ended up at a small pedestrian bridge nearby the Lennon Wall, which by the way was a little less Lennon-y and a little more art-sy than I imagined.</p>
-      <p>Between the wall and the locks, I felt surrounded by love.</p>
-      <p><pink>Feeling loved among locks says a lot about me as a person #foreveralone.</pink></p>
-      <p style="text-align:justify">A street artist performing Lennon songs on an acoustic guitar with a Czech-mate (I’ll understand if you stop reading now.) performing right by him added to atmosphere. I felt a little daring then, so when he asked me to join dancing, I graciously accepted. His smile didn’t last on his face for much longer..</p>
-      <p><pink>In case you’re wondering, kicking, stamping and slapping are big no-no’s when it comes to dancing.</pink></p>
-      <p>I sheepishly tipped them and scurried off to my final destination.</p>
-      <p style="text-align:justify">The city was bustling with all its lights and people and right then, when I thought it couldn’t get any cozier, a bunch of performers with speakers walk in the square, followed by this clown. They set speakers all around and the crowd gathers around in a huge circle, almost like it’s been rehearsed. Oh me? I just stand there distracted, gazing at the sight before me when a Czech motions me to not occupy that space, that just so happens to be at the center of their act.</p>
-      <p><pink>Me not being awkward in a foreign land? Yeah right.</pink></p>
-      <p style="text-align:justify">And for the 147th time that day, I dart in my heeled booties, only tripping twice. They start break-dancing and popping and locking and other vocabulary words for bending their bodies in ways that I didn’t know was possible. And I was too engrossed to take a better picture than the one above, but you get the gist.</p>
-      <p style="text-align:justify">When the act was over and the crowd was cheering, my stomach obviously growled in hunger. I chose a random restaurant for a meal, my legs paining from all the walking but my heart pleased that I made it around alive.</p>
-      <p><pink>The city center, blazing with all its glory.</pink></p>
+<head>
+    <title>Shrey's blog</title>
+</head>
 
-    </body>
+<body>
+    <div>
+        <h1><a href="/">Living Out Of A Suitcase</a></h1>
+    </div>
+
+    {% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+    {% endfor %}
+</body>
+
 </html>
